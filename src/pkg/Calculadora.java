@@ -3,25 +3,19 @@ package pkg;
 public class Calculadora {
 
 	public static Integer suma(int i, int j) {
-		return i+j;
+		return 0;
 	}
 
 	public static Integer resta(int i, int j) {
-		return i-j;
+		return 0;
 	}
 
 	public static Integer multiplica(int i, int j) {
-		return i*j;
+		return 0;
 	}
 	
-	//Si dividimos un número por 0, se produce indeterminación.
-	//Hemos decidido retornar -1 si esta situación sucede.
 	public static Integer divide(int i, int j) {
-		if(j != 0) {//Si no dividimos por 0:
-			return i/j;
-		}else {//Si dividimos por 0:
-			return -1;
-		}
+		return 0;
 	}
 	
 }
