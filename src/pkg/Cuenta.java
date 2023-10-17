@@ -63,4 +63,14 @@ public class Cuenta {
 		}
 	}
 	
+	public void doMovimiento(Movimiento movimiento) {//Realiza el movimiento pasado por parámetro, en función del símbolo de este.
+		if(movimiento.getSigno() == Signo.D) {
+			//Retirada
+			retirar(movimiento.getImporte());
+		}else if(movimiento.getSigno() == Signo.H){
+			//Ingreso
+			ingresar(movimiento.getImporte());
+		}
+	}
+	
 }
